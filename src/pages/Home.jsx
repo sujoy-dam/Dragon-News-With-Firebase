@@ -1,4 +1,5 @@
 import LeftNavbar from "../components/homeComponents/LeftNavbar";
+import RightNavbar from "../components/homeComponents/RightNavbar";
 
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
                 <LeftNavbar></LeftNavbar>
             </aside>
             <section className="col-span-6">Main Content</section>
-            <aside className="right col-span-3">Right Navbar</aside>
+            <aside className="right col-span-3">
+                <RightNavbar></RightNavbar>
+            </aside>
         </div>
     );
 };
