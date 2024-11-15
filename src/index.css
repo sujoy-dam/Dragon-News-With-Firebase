@@ -5,3 +5,11 @@
 html{
     overflow-y: scroll;
 }
+a.active{
+    background-color:aquamarine;
+    color: blueviolet;
+    font-size: 18px;
+    font-weight: 700;
+    transform: scaleX(1.05);
+    
+}

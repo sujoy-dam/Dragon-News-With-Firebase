@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+// import CategoryNews from "../components/homeComponents/CategoryNews";
 import LeftNavbar from "../components/homeComponents/LeftNavbar";
 import RightNavbar from "../components/homeComponents/RightNavbar";
 
@@ -8,7 +10,9 @@ const Home = () => {
             <aside className="left col-span-3">
                 <LeftNavbar></LeftNavbar>
             </aside>
-            <section className="col-span-6">Main Content</section>
+            <section className="col-span-6">
+                <Outlet></Outlet>
+            </section>
             <aside className="right col-span-3">
                 <RightNavbar></RightNavbar>
             </aside>
