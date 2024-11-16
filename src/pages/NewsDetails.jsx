@@ -14,7 +14,7 @@ const NewsDetails = () => {
         <div className="container mx-auto">
             <Header></Header>
             <div className='grid grid-cols-9 gap-5'>
-                <div className='col-span-6 border-2'>
+                <div className='col-span-6'>
                     <h1 className='font-semibold mb-10'>Dragon News</h1>
                     <div className="card w-full bg-base-100 shadow-xl">
                         <figure className="px-5 pt-5">
@@ -27,7 +27,7 @@ const NewsDetails = () => {
                             <h2 className="card-title">{title}</h2>
                             <p>{details}</p>
                             <div className="card-actions">
-                                <Link className="btn bg-[#D72050] text-white "><MdOutlineKeyboardArrowLeft className='text-2xl' />All news in this category</Link>
+                                <Link to={`/category/${news?.category_id}`} className="btn bg-[#D72050] text-white "><MdOutlineKeyboardArrowLeft className='text-2xl' />All news in this category</Link>
                             </div>
                         </div>
                     </div>
