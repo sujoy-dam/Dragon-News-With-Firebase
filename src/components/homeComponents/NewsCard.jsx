@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import { FaEye, FaStar, FaShareAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const NewsCard = ({ singleNews }) => {
-    console.log(singleNews)
+    // console.log(singleNews)
     return (
-        <div className="card bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+        <Link to={`/news/${singleNews._id}`} className="card bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
             {/* Header Section */}
             <div className="flex justify-between items-center p-4 border-b border-gray-100 bg-gray-50">
                 <div className="flex items-center">
@@ -44,7 +45,7 @@ const NewsCard = ({ singleNews }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 NewsCard.propTypes = {
